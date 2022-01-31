@@ -1,7 +1,7 @@
 //VAR-----------------------------------------------------------------------------------------------------------------//
 
-$skinMainFirstColor: #23282f!default;
-$skinMainSecondColor: #5ea3d3!default;
+$skinMainFirstColor: #112745!default;
+$skinMainSecondColor: #112745!default;
 $skinBorderRadius: 4px!default;
 $skinBorderWindowColor: #e6e9ee!default;
 $skinTablePadding: 10px!default;
@@ -209,6 +209,7 @@ body.active_admin {
     }
   }
   #active_admin_content {
+    font-size: 14px;
     span.blank_slate {
       border: 2px solid lighten( $skinMainSecondColor, 30% );
       color: #8494a8;
@@ -776,4 +777,87 @@ input[type='radio'] {
 
 .attributes_table table td .status_tag.empty {
   color: #ffffff;
+}
+
+//Active Admin Theme overides per CRS needs
+.active_admin_content table {
+  width: 100%;
+}
+
+.breadcrumb {
+  display: none;
+}
+
+.footer {
+  display: none;
+}
+
+#wrapper #header {
+  background: $skinMainFirstColor;
+  background-image: none;
+  text-transform: uppercase;
+  padding: 0px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+#wrapper #header ul.tabs > li > a {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #b2b9c7;
+    &:hover {
+      color: white;
+      background: transparent;
+    }
+}
+
+#header .tabs {
+  font-size: 15px;
+}
+
+#site_title_image {
+  width: 190px;
+}
+
+#site_title {
+  width: 303px;
+  display: flex !important;
+  margin-right: 0px !important;
+  padding-left: 12px !important ;
+  padding-top: 1px !important;
+  padding-bottom: 2px !important;
+}
+
+#header ul.tabs > li a {
+  padding: 10px 22px;
+  color: #b2b9c7;
+}
+
+#header ul {
+  padding-top: 0px !important;
+  padding-left: 10px !important;
+}
+
+#page_title {
+  text-transform: uppercase;
+  font-size: 2rem !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500 !important;
+}
+
+#wrapper #title_bar #titlebar_left h2 {
+  color: $skinMainFirstColor;
+}
+
+#wrapper  #title_bar {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+}
+
+#header ul.tabs > li:hover > a {
+  background: transparent;
+  color: #fff;
 }
