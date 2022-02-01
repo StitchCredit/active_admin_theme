@@ -865,3 +865,66 @@ input[type='radio'] {
   background: transparent;
   color: #fff;
 }
+
+
+#wrapper #active_admin_content div.table_tools ul.scopes li a, #wrapper #active_admin_content div.table_tools div.scopes > ul li a {
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  background: transparent
+}
+
+#wrapper #active_admin_content div.table_tools ul.scopes li a span, #wrapper #active_admin_content div.table_tools div.scopes > ul li a span {
+  color: #0d6efd;
+}
+
+#wrapper #active_admin_content div.table_tools ul.scopes li.selected a, #wrapper #active_admin_content div.table_tools div.scopes > ul li.selected a {
+  background: #0d6efd;
+  color: white;
+  span {
+      color: white !important;
+  }
+}
+
+#wrapper #title_bar #titlebar_right .action_item a {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: none;
+}
+
+#wrapper #title_bar #titlebar_right .action_item a:hover {
+  background-color: lighten( #0d6efd, 5% )!important;
+}
+
+#wrapper form input[type=submit], a.button, a.button:link, a.button:visited, fieldset.actions > ol > li.button_action > button {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: none;
+  &:hover {
+      background-color: lighten( #0d6efd, 5% )!important;
+    }
+}
+
+form fieldset.buttons li.cancel a, form fieldset.actions li.cancel a, form.filter_form a.clear_filters_btn {
+  background-color: transparent;
+  color: #6c757d;
+  border-color: #6c757d;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  &:hover {
+      border-color: #6c757d;
+      background-color: #6c757d !important;
+      color: white;
+    }
+}
