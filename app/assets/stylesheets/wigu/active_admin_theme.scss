@@ -65,6 +65,7 @@ body.active_admin {
     h1.site_title {
       color: $skinMainSecondColor;
       font-size: 16px;
+      margin-left: 10px;
     }
     a, a:link {
       color: #ffffff;
@@ -140,7 +141,8 @@ body.active_admin {
         border: none;
         padding: 10px 20px;
         color: #ffffff;
-        font-weight: 600;
+        font-weight: 400;
+        font-size: 14px;
         &:hover {
           background-color: lighten( $skinMainSecondColor, 5% )!important;
         }
@@ -314,7 +316,7 @@ body.active_admin {
             span {
               color: #ffffff;
               font-size: 11px;
-              font-weight: bold;
+              font-weight: 400;
             }
           }
         }
@@ -430,6 +432,7 @@ form input[type=submit], a.button, a:link.button, a:visited.button, fieldset.act
   border: none;
   padding: 10px 20px;
   color: #ffffff;
+  font-weight: 400;
   &:hover {
     background-image: none!important;
     background-color: lighten( $skinMainSecondColor, 5% )!important;
@@ -519,6 +522,7 @@ form fieldset.inputs {
       tr {
         th {
           background-color:lighten( $skinMainSecondColor, 20% );
+          color: white;
         }
       }
     }
